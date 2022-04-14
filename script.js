@@ -77,7 +77,7 @@ async function createList(){
     	const item = await getData(id);
       	console.log(item);
       	const {name, counterWant, counterBought} = item.record;
-      	html += `<li><b><a href="./index.html#${id}">${name}</a></b>: want (${counterWant}), bought (${counterBought}) <button>Edit</button><button>Delete</button></li>`;
+      	html += `<li><b><a href="./#${id}">${name}</a></b>: want (${counterWant}), bought (${counterBought}) <button>Edit</button><button>Delete</button></li>`;
     }
   	html += "</ol>";
   	main.innerHTML = html; //insert list into the HTML document
