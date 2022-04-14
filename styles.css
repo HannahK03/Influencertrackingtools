@@ -96,6 +96,7 @@
 			display: block;
 			width: 90%;
 			margin: 5px auto;
+			text-align: left;
 		}
 		label {
 			margin-top: 15px;
@@ -107,3 +108,4 @@
 			font-family: 'Alef', sans-serif;
 			height: 100px;
 		}
+		li{text-align: left} 
