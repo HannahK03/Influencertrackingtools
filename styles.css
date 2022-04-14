@@ -46,6 +46,9 @@
       		font-family: 'Russo One', sans-serif;
 			color: #E3170AFF;
       	}
+		.dashboard h1 {
+			font-size: 45px;
+		}
       	h2, p, label {
       		font-family: 'Alef', sans-serif;
 			color: #E3170AFF;
