@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef&family=Russo+One&display=swap');
+        html {
+      		background-color: #A9E5BBFF;
+      	}
+		body {
+			margin: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+		}
+		body.dashboard {
+			flex-direction: column;
+		}
+        main {
+      		max-width: 700px;
+          	padding: 10px;
+          	background-color: #FCF6B1FF;
+			font-family: 'Alef', sans-serif;
+			text-align: center;
+			border-radius: 10px;
+      	}
+        header, article {
+      		display: inline-block;
+          	vertical-align: top;
+			color: #E3170AFF;
+			width: 45%;
+			min-width: 250px;
+			margin: 2%;
+			box-sizing: border-box;
+			text-align: center;
+      	}
+        header img {
+      		width: 100%;
+			border-radius: 10px;
+      	}
+        footer {
+      		margin-top: 10px;
+          	border-top: 1px solid teal;
+          	padding-top: 10px;
+          	text-align: right;
+			color: #E3170AFF;
+			font-family: 'Alef', sans-serif;
+      	}
+        h1 {
+      		font-family: 'Russo One', sans-serif;
+			color: #E3170AFF;
+      	}
+      	h2, p, label {
+      		font-family: 'Alef', sans-serif;
+			color: #E3170AFF;
+      	}
+		p {
+			text-align: left;
+		}
+		button {
+            color: #E3170AFF;
+            font-family: 'Russo One', sans-serif;
+            background-color: #F7B32BFF;
+			cursor: pointer;
+			padding: 8px 0;
+			border: 0;
+			margin: 5px auto;
+			border-radius: 10px;
+			transition: 0.25s;
+			display: block;
+			width: 200px;
+		}
+		.dashboard button {
+			width: auto;
+			padding: 3px 6px;
+			display: inline-block;
+		}
+		button:hover {
+			background-color: #F7B32B99;
+			transform: scale(1.1);
+		}
+		h3 {
+			display: none;
+		}
+		.submitted button {
+			display: none;
+		}
+		.submitted h3 {
+			display: block;
+		}
+		form {
+			max-width: 500px;
+			min-width: 300px;
+			padding: 10px;
+			border-radius: 10px;
+			background-color: mintcream;
+			text-align: center;
+		}
+		label, input, textarea {
+			display: block;
+			width: 90%;
+			margin: 5px auto;
+		}
+		label {
+			margin-top: 15px;
+		}
+		form button {
+			margin: 15px auto;
+		}
+		textarea {
+			font-family: 'Alef', sans-serif;
+			height: 100px;
+		}
