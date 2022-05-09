@@ -93,7 +93,7 @@ async function handleEdit(e){
   	//scroll to bottom
   	window.scrollTo(0, document.body.scrollHeight);
   	//get data from storage
-	const id = e.currentTarget.closest("li").querySelector("a").getAttribute("href").slice(1);
+	const id = e.currentTarget.closest("li").querySelector("a").getAttribute("href").split("#")[1];
   	const {record} = await getData(id);
   	const {name, price, description, image} = record;
   	//populate form
@@ -106,7 +106,7 @@ async function handleEdit(e){
 
 async function handleDelete(e){
 	if (!confirm("Delete this item?")) return;
-  	const id = e.currentTarget.closest("li").querySelector("a").getAttribute("href").slice(1);
+  	const id = e.currentTarget.closest("li").querySelector("a").getAttribute("href").split("#")[1];
   	const {record} = await getData(bin);
   	record.items = record.items.filter(i => i !== id);
   	const putRes = await putData(bin, record);
